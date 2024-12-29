@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- main-containner -->
+   <div class="containeer">
+        <!-- big-box -->
+    <div class="big-box">
+            <!-- title -->
+            <div class="title">PASSWORD GENERATOR</div>
+
+            <!-- password -->
+            <div class="pass"> 
+                  <input type="readonly" class="display-pass" placeholder="generated password">
+                  <div class="copy-containeer">
+                    <span class="copy-mes"></span>
+                    <div class="img-copy"><img src="./copy.svg" alt="" width="15px"></div>
+                  </div>
+                  
+            </div>
+
+            <!-- box -->
+            <div class="box">
+                <!-- pass-length -->
+                <div class="pass-length-div"> 
+                       <div class="text">Password Length</div>
+                       <div class="number">10</div>
+                </div>
+
+                <!-- range -->
+                <div class="range-div"> 
+                    <input type="range" min="0" max="20" step="1">
+                </div>
+
+                <!-- checkbox-->
+                <div class="checkbox-div">
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                    <label for="uppercase">Include Uppercase Letters</label>
+
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                    <label for="lowercase">Include Lowercase Letters</label>
+
+                    <input type="checkbox" name="numbers" id="numbers">
+                    <label for="numbers">Include Numbers Letters</label>
+
+                    <input type="checkbox" name="symboles" id="symboles">
+                    <label for="symboles">Include Symboles Letters</label>
+                </div>
+
+                <!-- strength -->
+                <div class="strength-div">
+                    <div class="strength-name">Strength</div>
+                    <div class="strength" >abc</div>
+                </div>
+
+                <!-- generate -->
+                <button class="generate-div">
+                    Generate Password
+                </button>
+                    
+                
+            </div>
+
+
+
+    </div>
+   </div>
+    <script src="index.js"></script>
+</body>
+</html>
